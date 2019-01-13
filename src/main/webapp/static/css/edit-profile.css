@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+}
+
+.outer-container{
+	height: auto;
+	min-height: 200px;
+	padding: 10px;
+}
+
+.heading-container{
+	width: 100%;
+	border-bottom: 2px solid #cccccc;
+	text-align: center;
+	color: #51b2f7; 
+}
+
+.fields-container{
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+	margin-top: 10px;
+	padding-left: 70px;
+	padding-right: 70px;
+	border-bottom: 2px solid #cccccc;
+}
+
+.reg-error{
+	background-color: transparent;
+	font-weight: bold;  
+	color: #51b2f7; 
+	text-align: center;
+}
+
+.field-label{
+	background-color: transparent;
+	font-weight: bold; 
+	color: #51b2f7; 
+	text-align: left;
+}
+
+.form-field{
+	width: 100%;
+	height: 40px;
+	padding: 3px;
+	border-radius: 5px;
+	border: 1.5px solid #cccccc;
+	margin-bottom: 16px;
+}
+
+#inputAbout{
+	height: 80px;
+}
+
+.update-btn{
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #ff8a84;
+	border:1px solid #ff8a84;
+	font-weight: bold; 
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+
+.update-btn:hover{
+	color: #ffffff;
+	background-color: #cccccc;
+	border-color: #51b2f7;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.outer-container{
+		width: 100%;
+	}
+	
+	.fields-container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 640px) {
+	.outer-container{
+		width: 100%;
+	}
+	
+	.fields-container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.outer-container{
+		width: 100%;
+	}
+	
+	.fields-container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* OTHER SIZES */
+@media (min-width: 980px) and (max-width: 991px) {
+	.outer-container{
+		width: 40%;
+		margin-left: 30%;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 992px) {
+	.outer-container{
+		width: 40%;
+		margin-left: 30%;
+	}
+}

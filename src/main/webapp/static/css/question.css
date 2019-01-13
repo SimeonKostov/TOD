@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+}
+
+.outer-container{
+	border: 2px solid #f2f2f2;
+	border-radius: 5px;
+	padding: 15px;
+	height: 300px;
+	background-color: #fefefe;
+}
+
+.sender-container{
+	width: 100%;
+	height: 40px;
+/* 	border: 1px solid blue; */
+	border-bottom: 2px solid #f2f2f2;
+	font-size: 12pt;
+	color: #51b2f7;
+}
+
+.sender-profile-link{
+	font-size: 12pt;
+}
+
+.sender-profile-link:hover{
+	text-decoration: none;
+}
+
+.sender-list{
+	overflow-x:hidden;
+	white-space:nowrap; 
+}
+
+.sender-list li{
+	display:inline;
+}
+
+.sender-list li:last-child{
+	color: #51b2f7;
+}
+
+.sender-avatar{
+	width: 35px; 
+	height: 35px; 
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.question-content{
+	width: 100%;
+	height: auto;
+	min-height: 30px;
+/* 	border: 1px solid blue; */
+	margin-top: 5px;
+	word-wrap: break-word;
+	font-weight: 630;
+}
+
+.answer{
+	width: 100%;
+	margin-top: 20px;
+/* 	border: 1px solid blue; */
+}
+
+.answer-field{
+	width: 100%;
+	height: 80px;
+	border: 1px solid #ff8a84;
+	border-radius: 5px;
+    padding-left: 5px; 
+}
+
+.answer-buttons-list{
+	overflow-x:hidden;
+	white-space:nowrap; 
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.answer-buttons-list li{
+	display:inline;
+	color: black;
+	font-weight: bold;
+}
+
+.answer-btn{
+	width: 45%;
+	background-color: #ff8a84;
+	border: 1px solid #ff8a84;
+	border-radius: 5px;
+	font-weight: bold;
+	color: white;
+	height: 30px;
+	float: left;
+}
+
+.answer-btn:hover{
+	background-color: #cccccc;
+	border-color: #51b2f7;
+	cursor: pointer;
+}
+
+.no-answer-btn{
+	width: 45%;
+	background-color: #51b2f7;
+	border: 1px solid #51b2f7;
+	border-radius: 5px;
+	font-weight: bold;
+	color: white;
+	height: 30px;
+	float: right;
+}
+
+.no-answer-btn:hover{
+	background-color: #cccccc;
+	border-color: #ff8a84;
+	cursor: pointer;
+}
+
+.success-container{
+/* 	display: none; */
+}
+
+.success-icon{
+	width: 100%;
+	height: 100%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.outer-container{
+		margin-top: 30px;
+		margin-left: 2.5%;
+		width: 95%;
+	}
+	
+	.success-container{
+		margin-top: 100px;
+		margin-left: 30%;
+		width: 40%;
+		height: auto;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 640px) {
+	.outer-container{
+		margin-top: 30px;
+		margin-left: 10%;
+		width: 80%;
+	}
+	
+	.success-container{
+		margin-top: 50px;
+		margin-left: 35%;
+		width: 30%;
+		height: auto;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.outer-container{
+		margin-top: 30px;
+		margin-left: 10%;
+		width: 80%;
+	}
+	
+	.success-container{
+		margin-top: 50px;
+		margin-left: 35%;
+		width: 30%;
+		height: auto;
+	}
+}
+
+/* OTHER SIZES */
+@media (min-width: 980px) and (max-width: 991px) {
+	.outer-container{
+		margin-top: 30px;
+		margin-left: 30%;
+		width: 40%;
+	}
+	
+	.success-container{
+		margin-top: 50px;
+		margin-left: 42%;
+		width: 15%;
+		height: auto;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 992px) {
+	.outer-container{
+		margin-top: 30px;
+		margin-left: 30%;
+		width: 40%;
+	}
+	
+	.success-container{
+		margin-top: 50px;
+		margin-left: 42%;
+		width: 15%;
+		height: auto;
+	}
+}

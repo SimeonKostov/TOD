@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- DEFAULT NOT LOGGED TEMPLATE -->
+	<definition name="temp-not-logged-def" template="/WEB-INF/views/jsp/layouts/not_logged_template/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/jsp/layouts/not_logged_template/header.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/jsp/layouts/footer.jsp"/>
+	</definition>
+	
+	<!-- INDEX PAGE -->
+	<definition name="index" extends="temp-not-logged-def">
+		<put-attribute name="title" value="TOD-Answer or Dare"/>
+		<put-attribute name="body" value="/WEB-INF/views/jsp/index.jsp"/>
+	</definition>
+
+	<!-- LOGIN PAGE	 -->
+	<definition name="login" extends="temp-not-logged-def">
+		<put-attribute name="title" value="TOD-Log In"/>
+		<put-attribute name="body" value="/WEB-INF/views/jsp/login.jsp"/>
+	</definition>
+	
+	<!-- SIGN UP -->
+	<definition name="signup" extends="temp-not-logged-def">
+		<put-attribute name="title" value="TOD-Sign Up"/>
+		<put-attribute name="body" value="/WEB-INF/views/jsp/signup.jsp"/>
+	</definition>
+	
+	<!-- FORGOTTEN PASSWORD -->
+	<definition name="passForgot" extends="temp-not-logged-def">
+		<put-attribute name="title" value="TOD-Forgotten password"/>
+		<put-attribute name="body" value="/WEB-INF/views/jsp/passForgot.jsp"/>
+	</definition>
+	
+	<!-- DEFAULT LOGGED TEMPLATE -->
+	<definition name="temp-logged-def" template="/WEB-INF/views/jsp/layouts/logged_template/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/jsp/layouts/logged_template/header.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/jsp/layouts/footer.jsp"/>
+	</definition>
+	
+	<!-- MAIN PAGE -->
+	<definition name="main" extends="temp-logged-def">
+		<put-attribute name="title" value="TOD"/>
+		<put-attribute name="body" value="/WEB-INF/views/jsp/main.jsp"/>
+	</definition>
+	
+	<!-- PROFILE PAGE -->
+	<definition name="profile" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/profile.jsp"/>
+	</definition>
+	
+	<!-- PROFILE CHALLENGES PAGE -->
+	<definition name="user-challenges" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/user-challenges.jsp"/>
+	</definition>
+	
+	<!-- ALL NOTIFICATIONS -->
+	<definition name="notifications" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/notifications.jsp"/>
+	</definition>
+	
+	<!-- QUESTION NOTIFICATION -->
+	<definition name="question" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/question.jsp"/>
+	</definition>
+	
+	<!-- ANSWERED QUESTION -->
+	<definition name="answered-question" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/answered-question.jsp"/>
+	</definition>
+
+	<!--CHALLENGE PAGE -->
+	<definition name="challenge-page" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/challenge-page.jsp"/>
+	</definition>
+	
+	<!-- EDIT PROFILE -->
+	<definition name="edit-profile" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/edit-profile.jsp"/>
+	</definition>
+	
+	<!-- CHALLENGE RESPONSE PAGE -->
+	<definition name="upload-video" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/upload-video.jsp"/>
+	</definition>
+	
+	<!-- CHALLENGES PAGE -->
+	<definition name="challenges" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/challenges.jsp"/>
+	</definition>
+	
+	<!-- VIDEO PAGE -->
+	<definition name="video" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/video.jsp"/>
+	</definition>
+	
+	<!-- FOLLOWERS/FOLLOWED PEOPLE -->
+	<definition name="people" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/people.jsp"/>
+	</definition>
+	
+	<!-- FOLLOWERS/FOLLOWED PEOPLE -->
+	<definition name="searchResults" extends="temp-logged-def">
+		<put-attribute name="body" value="/WEB-INF/views/jsp/searchResults.jsp"/>
+	</definition>
+</tiles-definitions>

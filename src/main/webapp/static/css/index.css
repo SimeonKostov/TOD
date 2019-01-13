@@ -1,0 +1,101 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #fafafa;
+	font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron-spacer-div{
+	width: 100%;
+	background-color: transparent;
+}
+
+.signup-button{
+	color: #fff;
+	background-color: #ff8a84;
+	border-color: #ff8a84;
+}
+
+.signup-button:hover{
+	color: #ffffff;
+	background-color: #cccccc;
+	border-color: #51b2f7;
+}
+
+.login-button{
+	margin-top: 10px;
+	color: #ffffff;
+	background-color: #51b2f7;
+	border-color: #ffffff;
+}
+
+.login-button:hover{
+	background-color: #cccccc;
+	border-color: #ff8a84;
+	margin-top: 10px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.btn-primary{
+		width: 90%;
+		margin-left: 5%;
+	}
+	
+	.jumbotron-spacer-div{
+		height: 190px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 640px) {
+	.btn-primary{
+		width: 90%;
+		margin-left: 5%;
+	}
+	
+	.jumbotron-spacer-div{
+		height: 80px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.btn-primary{
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	.jumbotron-spacer-div{
+		height: 300px;
+	}
+}
+
+/* OTHER SIZEZ */
+@media (min-width: 980px) and (max-width: 1199px) {
+	.btn-primary{
+		width: 20%;
+		margin-left: 40%;
+	}
+	
+	.jumbotron-spacer-div{
+		height: 250px;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.btn-primary{
+		width: 20%;
+		margin-left: 40%;
+	}
+	
+	.jumbotron-spacer-div{
+		height: 250px;
+	}
+}

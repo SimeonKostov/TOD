@@ -1,0 +1,5 @@
+package com.tod.model;
+
+public enum NotificationsDescriptions {
+	ASKED_YOU_А_QUESTION, ANSWERED_YOUR_QUESTION, DARED_TO_RECEIVE_A_CHALLENGE, SENT_YOU_CHALLENGE, MET_THE_CHALLENGE, FOLLOWED_YOU
+}

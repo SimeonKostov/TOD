@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+}
+
+.reg-error{
+	width: 100%;
+}
+
+.field-container{
+/* 	border: 1px solid red; */
+	width: 30%;
+	height: 100px;
+	margin-left: 35%;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.field-container h2{
+	margin-bottom: 20px;
+	color: #ff8a84;
+}
+
+.submit-btn{
+	width: 100%;
+	margin-top: 5px; 
+	border: 1px solid #51b2f7; 
+	background-color: #51b2f7; 
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+.submit-btn:hover{
+	cursor: pointer;
+	background-color: #ccc;
+	border-color: #ff8a84;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.field-container{
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 640px) {
+	.field-container{
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.field-container{
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+/* DESKTOP */
+@media (min-width: 980px) {
+
+}

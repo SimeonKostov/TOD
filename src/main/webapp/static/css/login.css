@@ -1,0 +1,140 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+}
+
+.jumbotron{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 3px;
+	padding-top: 120px;
+}
+
+.form-control{
+	width: 100%;
+}
+
+.reg-error{
+	width: 100%;
+}
+
+.jumbotron-spacer-div{
+	padding-top: 30px;
+}
+
+.login-button{
+	margin-top: 10px; 
+	border-color: #51b2f7; 
+	background-color: #51b2f7; 
+	color: #ffffff;
+}
+
+.login-button:hover{
+	cursor: pointer;
+	background-color: #ccc;
+	border-color: #ff8a84;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.jumbotron{
+		width: 98%;
+		margin-left: 1%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 640px) {
+	.jumbotron{
+		width: 60%;
+		margin-top: 70px;
+		margin-left: 20%;
+		padding-top: 20px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.jumbotron{
+		margin-top: 70px;
+		width: 70%;
+		margin-left: 15%;
+		padding-top: 110px;
+	}
+	
+	.form-control{
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	.reg-error{
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	.table{
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.jumbotron{
+		margin-top: 40px;
+		width: 40%;
+		margin-left: 30%;
+		padding-top: 60px;
+	}
+	
+	.form-control{
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	.reg-error{
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	.table{
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+/* iPad in portrait & landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+	
+}
+
+/* Landscape iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	.jumbotron{
+		margin-top: 40px;
+		width: 70%;
+		margin-left: 15%;
+		padding-top: 110px;
+	}
+	
+	.form-control{
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	.table{
+		width: 70%;
+		margin-left: 15%;
+	}
+}
+
+/* Portrait iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	
+}

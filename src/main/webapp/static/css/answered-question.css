@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+}
+
+.outer-container{
+	border: 2px solid #f2f2f2;
+	border-radius: 5px;
+	height: auto;
+}
+
+.answers-container{
+	width: 100%;
+	height: auto;
+	min-height: 130px;
+/* 	border: 1px solid red; */
+}
+
+.answer-container{
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	height: auto;
+	min-height: 130px;
+}
+
+.answers-spacer-line{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.ans-avatar-container{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+
+.ans-avatar{
+	width: 90px; 
+	height: 90px; 
+	border-radius: 50px;
+	border: 2px solid #f2f2f2;
+	background-color: #f2f2f2;
+}
+
+.ans-username-link{
+	display: inline-block;
+	max-width: 90px;
+	font-size: 10pt;
+	text-align: center;
+	color: #111111;
+	font-weight: bold;
+}
+
+.ans-username-link:hover{
+	text-decoration: none;
+	color: #111111;
+}
+
+.q-a-list-container{
+	float: right;
+	width: 70%;
+	height: 100%;
+	padding-top: 5%;
+}
+
+.q-a-list{
+	list-style:none;
+	color: #838383;
+}
+
+.q-a-list li{
+	word-wrap: break-word;
+}
+
+.ans-sender-username-link{
+	display: inline-block;
+	max-width: 90px;
+	text-overflow: ellipsis;
+	font-size: 10pt;
+	text-align: center;
+	color: #a0a0a0;
+	margin-right: 20px;
+}
+
+.q-a-list li:first-child{
+	float: right;
+	color: #f2f2f2;
+	font-size: 10pt;
+}
+
+.q-a-list li:last-child{
+	float: right;
+	padding: 10px;
+	color: #cccccc;
+	font-size: 8pt;
+}
+
+/* FOLLOWING CONTAINER */
+
+/* Landscape phones and down */
+@media (max-width: 480px) and (max-height: 700px){
+	.outer-container{
+		width: 100%;
+		height: auto;
+		min-height: 150px;
+		margin-top: 30px; 
+		border-radius: 0;
+	}
+	
+	.answer-container{
+		width: 100%;
+	}
+	
+	.ans-avatar-container{
+		padding: 10px;
+	}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 640px) {
+	
+	.outer-container{
+		width: 100%;
+		height: auto;
+		min-height: 150px;
+		margin-top: 30px; 
+		border-radius: 0;
+	}
+	
+	.answer-container{
+		width: 100%;
+	}
+	
+	.ans-avatar-container{
+		padding: 10px;
+	}
+	
+	
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 641px) and (max-width: 979px) {
+	.outer-container{
+		width: 80%;
+		height: auto;
+		min-height: 200px;
+		margin-left: 10%;
+		margin-top: 30px; 
+	}
+	
+	.answer-container{
+		width: 80%;
+		height: auto;
+		min-height: 45%;
+		margin-left: 10%;
+		border-radius: 7px;
+	}
+	
+	.q-a-list li:last-child{
+		font-size: 9pt;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 980px) {
+	.outer-container{
+		width: 50%;
+		height: auto;
+		min-height: 200px;
+		margin-left: 25%;
+		margin-top: 30px; 
+	}
+	.answer-container{
+		width: 90%;
+		height: auto;
+/* 		min-height: 130px; */
+		margin-left: 5%;
+/* 		border: 0.5px solid #A7A7A7; */
+		border-radius: 7px;
+	}
+	
+	.ans-avatar-container{
+		padding: 15px;
+	}
+	
+	.q-a-list li:last-child{
+		font-size: 10pt;
+	}
+	
+}

@@ -1,0 +1,25 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+.cont {
+  background-color: white;
+  border-top: 2px solid #f2f2f2;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.customer-support{
+	width: 100%;
+	height: 100%;
+/* 	border: 1px solid blue; */
+	padding-top: 5px;
+	padding-left: 20px;
+}
+
+.customer-support p{
+	color: #a0a0a0;
+	float: left;
+	margin-left: 5px;
+}
